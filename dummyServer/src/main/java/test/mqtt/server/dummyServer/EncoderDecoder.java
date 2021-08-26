@@ -9,6 +9,7 @@ import java.util.Base64;
 import javax.imageio.ImageIO;
 
 public class EncoderDecoder {
+	
 	public static String encodeToString(BufferedImage image, String type) {
         String imageString = null;
         ByteArrayOutputStream bos = new ByteArrayOutputStream();

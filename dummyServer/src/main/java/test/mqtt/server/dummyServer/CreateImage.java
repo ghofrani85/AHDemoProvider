@@ -31,23 +31,4 @@ public class CreateImage {
 		}
 		return img;
 	}
-
-	public static void makeFaceImage() {
-		JFrame frame = new JFrame("TheFrame");
-		frame.setBounds(10, 10, 300, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Random random = new Random();
-
-		JPanel p = new JPanel() {
-			@Override
-			public void paint(Graphics g) {
-				g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
-				g.fillRect(50, 50, 200, 200);
-			}
-
-		};
-		frame.add(p);
-		frame.setVisible(true);
-
-	}
 }

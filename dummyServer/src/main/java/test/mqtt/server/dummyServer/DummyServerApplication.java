@@ -38,7 +38,7 @@ public class DummyServerApplication {
 		int ID = rnd.nextInt(999999);
 
 		// New MQTT Client
-		String mqttServer = "tcp://127.0.0.1";
+		String mqttServer = "tcp://127.0.0.1:1883";
 		client = new MqttClient(mqttServer, "" + ID);
 
 		// Connect MQTT Client to Broker
